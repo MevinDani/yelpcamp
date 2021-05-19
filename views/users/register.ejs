@@ -1,0 +1,51 @@
+<% layout('layout/boilerplate') %>
+<div class="container justify-content-center align-items-center mt-3 mb-3">
+    <div class="row">
+        <div class="col-md-6 offset-md-3 col-xl-6 offset-xl-3">
+            <div class="card shadow">
+                <img src="https://images.unsplash.com/photo-1444663837429-d2d894a77c77?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fG91dGRvb3J8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="" class="card-img-top" id="signupimg">
+                <div class="card-body">
+                    <h5 class="card-title">Register</h5>
+                    <form action="/register" method="POST" novalidate class="needs-validation">
+                        <div class="mb-3">
+                            <label class="form-label" for="username">Username</label>
+                            <input class="form-control" type="text" id="username" name="username" required>
+                            <div class="valid-feedback">
+                                Looks Good
+                            </div>
+                            <div class="invalid-feedback">
+                                Invalid Username
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="email">Email</label>
+                            <input class="form-control" type="email" id="email" name="email" required>
+                            <div class="valid-feedback">
+                                Looks Good
+                            </div>
+                            <div class="invalid-feedback">
+                                Invalid Email
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="password">Password</label>
+                            <input class="form-control" type="password" id="password" name="password" required>
+                            <div class="valid-feedback">
+                                Looks Good
+                            </div>
+                            <div class="invalid-feedback">
+                                Invalid password
+                            </div>
+                        </div>
+                        <div class="d-grid mt-3">
+                            <button class="btn btn-success btn-block">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>  
+//
